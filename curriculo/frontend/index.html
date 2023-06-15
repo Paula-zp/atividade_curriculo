@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <title>Curriculo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/avatar.jpeg" alt="foto de perfil" id="avatar">
+        <div class="principal">
+            <h1>Paula Zanella Piva</h1>
+            <p>Estudante</p>
+            <button id="trocarAvatar">Trocar foto</button>
+        </div>
+    </header>
+    <!--Seção com as duas colunas-->
+    <section class="conteudo">
+        <!--Seção da coluna da esquerda-->
+        <section class="esquerda">
+            <!--Div da Formação-->
+            <div>
+                <h2>Formação</h2>
+                <!--Curso 1-->
+                <div>
+                    <h4>Ensino Médio | 2019 - 2021</h4>
+                    <p>Ensino Médio na Escola de Ensino Médio Rainha D' Paz</p>
+                </div>
+                <!--Curso 2-->
+                <div>
+                    <h4>CCAA English Course | 2000 - 2023</h4>
+                    <p>Níveis PreTeen, TEEN e Adult de inglês da escola CCAA</p>
+                </div>
+                <!--Curso 3-->
+                <div>
+                    <h4>CCAA Teacher's Course | 2022 - 2022</h4>
+                    <p>Treinamento para teachers da escola CCAA</p>
+                </div>
+            </div>
+            <!--Div da Experiência-->
+            <div class="exp">
+                <h2>Experiência</h2>
+                <!--Exp 1-->
+                <div>
+                    <h4><strong>Empresa | 2020 - 2023</strong> | Cargo</h4>
+                    <p>Descrever as atividades do cargo</p>
+                </div>
+                <!--Exp 2-->
+                <div>
+                    <h4><strong>Empresa | 2020 - 2023</strong> | Cargo</h4>
+                    <p>Descrever as atividades do cargo</p>
+                </div>
+                <!--Exp 3-->
+                <div>
+                    <h4><strong>Empresa | 2020 - 2023</strong> | Cargo</h4>
+                    <p>Descrever as atividades do cargo</p>
+                </div>
+                <!--Exp 4-->
+                <div>
+                    <h4><strong>Empresa | 2020 - 2023</strong> | Cargo</h4>
+                    <p>Descrever as atividades do cargo</p>
+                </div>
+            </div>
+            <!--Div da Realização-->
+            <div class="realizacao">
+                <h2>Realizações</h2>
+                <!--Realização 1-->
+                <div>
+                    <h4>Projeto Gamificação Educacional | 2021</h4>
+                    <p>Projeto realizado com os alunos do 9° ao 3° do Ensino Médio e professores da Escola Rainha D' Paz</p>
+                </div>
+                <!--Realização 2-->
+                <div>
+                    <h4>CoWo | 2023</h4>
+                    <p>Jogo desenvolvido para a Cia de Talentos</p>
+                </div>
+            </div>
+        </section>
+        <!--Seção da coluna da direita-->
+        <section class="direita">
+            <!--Div do Sobre mim-->
+            <div class="infos">
+                <h3><strong>Sobre mim</strong></h3>
+                <ul id="info">
+                    <li><i class="uil uil-location-point"></i> São Paulo - SP</li>
+                    <li><i class="uil uil-phone"></i>-</li>
+                    <li><i class="uil uil-envelope"></i>-</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mattis arcu id nibh tempor blandit. Quisque tortor mi, eleifend tincidunt nisl a, vestibulum tristique est. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam interdum ac est sed bibendum.</p>
+            </div>
+            <!--Div Habilidades-->
+            <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul id="listaHab">
+                    <!--A lista está vazia porque o conteúdo é puxado do banco de dados-->
+                </ul>
+                <form class="entrada" id="habilidadesForm" method="post" action="http://127.0.0.1:3000/habilidades/add">
+                    <input type="text" name="habilidade" value="" id="entradaHab">
+                    <button id="addHab" type="submit">Adicionar</button>
+                </form>
+            </div>
+            <!--Div de Personalidade-->
+            <div class="personalidade">
+                <h3>Características</h3>
+                <ul>
+                    <li>Resiliência</li>
+                    <li>Flexibilidade</li>
+                    <li>Liderança</li>
+                    <li>Organização</li>
+                    <li>Criatividade</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
