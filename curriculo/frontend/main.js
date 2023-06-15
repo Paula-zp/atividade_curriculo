@@ -2,11 +2,11 @@ var toggle = false
 $(document).ready(() => {
     $("#trocarAvatar").click(() => {
         if (!toggle) {
-            $("#avatar").attr("src", "assets/avatar2.jpg")
+            $("#avatar").attr("src", "/assets/avatar2.jpg")
             toggle = !toggle
         }
         else {
-            $("#avatar").attr("src", "assets/avatar.jpeg")
+            $("#avatar").attr("src", "/assets/avatar.jpeg")
             toggle = !toggle
         }
     });
@@ -29,7 +29,7 @@ window.onload = function () {
     -> Cria uma variável chamada url, que irá armazenar o endpoint que eu criei no app.js correspondente ao get
     da tabela de habilidades*/
     var xhr = new XMLHttpRequest();
-    var url = "http://127.0.0.1:3000/habilidades";
+    var url = "/habilidades";
 
     /*Aqui vamos fazer uma mudança no objeto "xhr".
     -> O método ".open()" configura a solicitação AJAX antes dela ser enviada pro servidor.
@@ -97,7 +97,7 @@ $(document).ready(function() {
             -> Definimos a url pra onde a solicitação vai ser enviada
             -> Definimos quais dados serão enviados pro servidor*/
             type: "POST",
-            url: "http://127.0.0.1:3000/habilidades/add",
+            url: "/habilidades/add",
             data: {habilidade: habilidadeNome},
         });
     });
